@@ -1,0 +1,9 @@
+.beer img{
+    height: 50%;
+}
+
+.beer{
+    height: 400px;
+    width: 300px;
+    border: 1px solid black;
+}

@@ -9,7 +9,6 @@ function Beers(props){
             <h3>{props.tagline}</h3>
             <h3>{props.abv}</h3>
             <button onClick={() => props.likeButton(props.index)}>{props.buttonText}</button>
-            
         </div>
     )
 }

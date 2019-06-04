@@ -12,13 +12,8 @@ class App extends Component {
 
   componentDidMount(){
     fetch('https://api.punkapi.com/v2/beers')
-    .then(function(response) {
-        if (response.status >= 400) {
-            throw new Error("Bad response from server");
-        }
-        return response.json();
-    })
-    .then(beers=> this.setState({beers: beers})
+    .then(response => response.json())
+    .then(beers => this.setState({beers: beers})
     );
   }
 
